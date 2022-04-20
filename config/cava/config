@@ -1,0 +1,18 @@
+[general]
+framerate = 60
+autosens = 1
+sensitivity = 100
+
+[color]
+
+gradient = 1
+
+gradient_color_1 = '#B5E8DF'
+gradient_color_2 = '#B5E8DF'
+gradient_color_3 = '#88DCEB'
+gradient_color_4 = '#88DCEB'
+gradient_color_5 = '#DDB6F1'
+gradient_color_6 = '#DDB6F1'
+gradient_color_7 = '#F5C2E7'
+gradient_color_8 = '#F5C2E7'
+
