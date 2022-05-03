@@ -5,6 +5,7 @@ Startpage: https://github.com/WahyuHidayattz/Simple-Startpage
 Fonts:
 mkdir -p ~/.local/share/fonts (Mover alli la font presente en este repositorio)
 pacman -S ttf-dejavu adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
+yay -s ttf-meslo-nerd-font-powerlevel10k
 
 Previews:
 ![image](https://user-images.githubusercontent.com/55555800/164292553-960b94fa-19c5-405b-abe8-c019ef6091a2.png)
