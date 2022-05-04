@@ -9,6 +9,8 @@ yay -s ttf-meslo-nerd-font-powerlevel10k
 
 Previews:
 ![image](https://user-images.githubusercontent.com/55555800/164292553-960b94fa-19c5-405b-abe8-c019ef6091a2.png)
+![image](https://user-images.githubusercontent.com/55555800/166620049-f17ab916-b097-490d-96f5-ffb6f7523f0b.png)
+
 ![image](https://user-images.githubusercontent.com/55555800/164292894-63e632da-2e06-4f38-a313-2e50ae2f0e2e.png)
 
 
