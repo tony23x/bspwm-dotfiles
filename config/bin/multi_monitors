@@ -1,0 +1,14 @@
+#!/bin/bash
+
+conectados=$(xrandr -q | awk '/ connected/ {count++} END {print count}')
+pri=$(xrandr -q | awk '/ connected/ {print $1}' | sed -sn 1p)
+sec=$(xrandr -q | awk '/ connected/ {print $1}' | sed -sn 2p)
+
+if [[ $conectados -gt 1 ]]; then
+   xrandr --output "$pri" --primary --auto --scale 1.0x1.0 --output "$sec" --left-of "$pri" --auto --scale 1.0x1.0
+   bspc monitor $pri -s $sec
+   bspc monitor $pri -d  一 二 三 四 五
+   bspc monitor $sec -d 六 七 八 九 零
+else
+   bspc monitor -d  一 二 三 四 五 六 七 八 九 零
+fi

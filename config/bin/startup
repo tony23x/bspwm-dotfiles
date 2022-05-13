@@ -1,0 +1,39 @@
+#!/bin/bash
+
+tput civis
+for i in {1..30}
+do
+  bspc node -z top 0 -8
+  bspc node -z bottom 0 8
+  sleep 0.01
+done
+
+sleep 2
+
+for i in {1..60}
+do
+  bspc node -z left -4 0
+  bspc node -z right 4 0
+  sleep 0.01
+done
+
+sleep 2
+
+for i in {1..30}
+do
+  bspc node -z top_left -8 -2
+  bspc node -z bottom_right 8 2
+  sleep 0.01
+done
+
+clear
+
+bspc node -t tiled
+bspc wm -r
+bspc rule -a kitty state=tiled
+cd $HOME/Downloads/bad-apple; python touhou_bad_apple_v4.0.py
+#cbonsai -p -l -t 0,3 -m "Welcome to BSPWM $(whoami)!"
+clear
+echo "Exiting..."
+cd
+tput cnorm
