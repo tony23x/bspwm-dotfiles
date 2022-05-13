@@ -1,5 +1,0 @@
-#!/bin/sh
-
-INTERFACE=$(ip ad | awk '/state UP/ { print $2 }' | cut -d":" -f1)
- 
-echo " $(/usr/sbin/ifconfig $INTERFACE | grep "inet " | awk '{print $2}')"
